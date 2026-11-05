@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste tailwind</title>
+</head>
+<body>
+    <ul role="list">
+  {#each people as person}
+    <li class="group/item ...">
+      <!-- ... -->
+      <a class="group/edit invisible group-hover/item:visible ..." href="tel:{person.phone}">
+        <span class="group-hover/edit:text-gray-700 ...">Call</span>
+        <svg class="group-hover/edit:translate-x-0.5 group-hover/edit:text-gray-500 ..."><!-- ... --></svg>
+      </a>
+    </li>
+  {/each}
+</ul>
+</body>
+</html>
